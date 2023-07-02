@@ -19,39 +19,39 @@
             <h1 class="display-4" id="rotateChars">
                 Sounds like another thing to add to your TO-DO list?
             </h1>
-            <p>A BEAUTIFUL NAVBAR</p><br/><br/><br/>
+            <p>A BEAUTIFUL NAVBAR</p>
+            <br/><br/><br/>
             <div class="container">
-
-                <div class="row">
+                <div class="row-sm">
                     <div class="col-sm">
-                        {#                    <div class="nav-item">#}
-                        {#                        <a class="nav-link" href="#">ADD TO-DO#}
-                        {#                        </a>#}
-                        {#                    </div>#}
-                        {#                    <div class="nav-item">#}
-                        {#                        <a class="nav-link" href="#">LIST#}
-                        {#                        </a>#}
-                        {#                    </div>#}
-                        <button class="btn btn-outline-info text-light left"
-                                type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                 height="50" fill="#fb4143" class="bi bi-list"
-                                 viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                            </svg>
-                            LIST
-                        </button>
-                        <button class="btn btn-outline-info text-info right"
-                                type="submit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25"
-                                 height="50" fill="#fb4143"
-                                 class="bi bi-plus-circle" viewBox="0 0 16 16">
-                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-                            </svg>
-                            TO-DO
-                        </button>
+                        <a href="{% url 'tasks' %}">
+                            <button class="btn btn-outline-info text-light left"
+                                    type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="25"
+                                     height="50" fill="#fb4143"
+                                     class="bi bi-list"
+                                     viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                                TO-DO
+                            </button>
+                        </a>
+                        <a href="{% url 'tasks' %}">
+                            <button class="btn btn-outline-info text-info right"
+                                    type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg"
+                                     width="25"
+                                     height="50" fill="#fb4143"
+                                     class="bi bi-plus-circle"
+                                     viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                </svg>
+                                TO-DO
+                            </button>
+                        </a>
                     </div>
                     <div class=""><br/><br/><br/><br/><br/><br/>
                         <div class="mb-5 text-center">
@@ -66,39 +66,6 @@
                                 </small>
                             </div>
                         </div>
-                        {#                    <div class="col-md-8 mx-auto text-center">#}
-                        {#                        <div class="d-flex justify-content-evenly align-items-center mb-5 text-center"#}
-                        {#                             id="bottomNav">#}
-                        {#                            <div class="nav-item">#}
-                        {#                                <a class="nav-link" href="#">LIST#}
-                        {#                                </a>#}
-                        {#                            </div>#}
-                        {#                            <div class="nav-item">#}
-                        {#                                <a class="nav-link" href="#">ADD TO-DO#}
-                        {#                                </a>#}
-                        {#                            </div>#}
-                        {#                        </div>#}
-                        {#                        <button class="btn btn-outline-info text-dark"#}
-                        {#                                type="submit">#}
-                        {#                            <svg xmlns="http://www.w3.org/2000/svg" width="25"#}
-                        {#                                 height="50" fill="#fb4143"#}
-                        {#                                 class="bi bi-plus-circle" viewBox="0 0 16 16">#}
-                        {#                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>#}
-                        {#                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>#}
-                        {#                            </svg>#}
-                        {#                            Add Brand#}
-                        {#                        </button>#}
-                        {#                        <button class="btn btn-outline-info text-dark"#}
-                        {#                                type="submit">#}
-                        {#                            <svg xmlns="http://www.w3.org/2000/svg" width="25"#}
-                        {#                                 height="50" fill="#fb4143"#}
-                        {#                                 class="bi bi-plus-circle" viewBox="0 0 16 16">#}
-                        {#                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>#}
-                        {#                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>#}
-                        {#                            </svg>#}
-                        {#                            Add Brand#}
-                        {#                        </button>#}
-                        {#                    </div>#}
                     </div>
                 </div>
             </div>
