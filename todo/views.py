@@ -1,25 +1,18 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView, \
     FormView
 from django.urls import reverse_lazy
-
-from .models import Task
-
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
+from .models import Task
 
-
-# def index(request):
-#     return HttpResponse("index.html")
 
 def index(request):
-    return render(request, "todo/index.html")
-    # return render(request, "task_list/task_list.html")
+    return render(request, "todo/task_list.html")
 
 
 class CustomLoginView(LoginView):
